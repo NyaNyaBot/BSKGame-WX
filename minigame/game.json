@@ -1,0 +1,36 @@
+
+{
+  "deviceOrientation" : "landscape",
+  "iOSHighPerformance" : true,
+  "iOSHighPerformance+" : false,
+  "subpackages"         : [
+    {
+      "name" : "wasmcode",
+      "root" : "wasmcode/"
+    },
+    {
+      "name" : "data-package",
+      "root" : "data-package/"
+    }
+  ],
+  "parallelPreloadSubpackages" : [
+    {
+      "name" : "wasmcode"
+    },
+    {
+      "name" : "data-package"
+    }
+  ],
+  "plugins"                    : {
+    "UnityPlugin" : {
+      "version" : "1.2.91",
+      "provider" : "YOUR_PLUGIN_PROVIDER",
+      "contexts" : [
+        {
+          "type" : "isolatedContext"
+        }
+      ]
+    }
+  },
+  "workers"                    : "workers"
+}
