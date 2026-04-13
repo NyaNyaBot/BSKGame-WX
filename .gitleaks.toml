@@ -17,6 +17,7 @@ description = "Exclude known safe patterns"
 paths = [
   '''\.gitleaks\.toml$''',
   '''\.gitignore$''',
+  '''\.secrets$''',
 ]
 regexes = [
   '''YOUR_WECHAT_APPID''',
