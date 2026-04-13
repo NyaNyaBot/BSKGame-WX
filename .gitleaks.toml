@@ -1,0 +1,24 @@
+minVersion = "v8.25.0"
+
+[[rules]]
+id = "wechat-appid"
+description = "WeChat Mini Program AppID"
+regex = '''wxd[0-9a-f]{15}'''
+tags = ["wechat", "appid"]
+
+[[rules]]
+id = "wechat-provider"
+description = "WeChat Plugin Provider ID"
+regex = '''wxe[0-9a-f]{15}'''
+tags = ["wechat", "provider"]
+
+[allowlist]
+description = "Exclude known safe patterns"
+paths = [
+  '''\.gitleaks\.toml$''',
+  '''\.gitignore$''',
+]
+regexes = [
+  '''YOUR_WECHAT_APPID''',
+  '''YOUR_PLUGIN_PROVIDER''',
+]
