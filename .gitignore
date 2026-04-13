@@ -1,0 +1,7 @@
+# WeChat mini-game private config (contains sensitive app credentials)
+minigame/project.config.json
+minigame/game.json
+
+# Example configs (copy and rename without .example)
+# minigame/project.config.json.example
+# minigame/game.json.example
